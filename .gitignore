@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!patches/src/main/kotlin/app/morphe/patches/all/misc/build/
+!patches/src/main/kotlin/app/morphe/patches/all/misc/build/**
+
+# Local machine / SDK
+local.properties
+
+# Logs / OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Android / Studio
+captures/
+.externalNativeBuild/
+.cxx/
+*.aab
+*.apk
+*.apks
+*.apkm
+*.xapk
+output-metadata.json
+*.iml
+.idea/
+
+# Secrets / signing
+*.jks
+*.keystore
+google-services.json
+
+# Built patch bundles (rebuild with gradle)
+*.mpp
+!patches/src/**/*.mpp
+
+# Profiling / misc
+*.hprof
+node_modules/
+.codegraph/
+revanced-patches/
